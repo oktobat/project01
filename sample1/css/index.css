@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;700;&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +26,10 @@ img {
   content: "";
   display: block;
   clear: both;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 #header {
@@ -100,4 +106,20 @@ img {
   border-bottom: 2px solid rgb(224, 222, 222);
   padding: 20px 40px;
   margin-bottom: 50px;
+}
+#section .business ul li h3 {
+  font-size: 30px;
+  color: #333;
+}
+#section .business ul li h3 span {
+  display: block;
+  font-weight: 200;
+  margin: 20px 0 40px;
+}
+#section .business ul li a {
+  font-size: 14px;
+  background: #45639d;
+  color: #fff;
+  padding: 13px 29px;
+  border-radius: 6px;
 }
