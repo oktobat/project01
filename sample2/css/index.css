@@ -135,3 +135,12 @@ img {
   color: #fff;
   background: #000;
 }
+#section .ourcompany ul li div.photo {
+  overflow: hidden;
+}
+#section .ourcompany ul li img {
+  transition: all 0.2s;
+}
+#section .ourcompany ul li img:hover {
+  transform: scale(1.2);
+}
