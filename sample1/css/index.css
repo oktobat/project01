@@ -17,7 +17,7 @@ a {
   margin: 0 auto;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .cf::after {
@@ -79,4 +79,25 @@ img {
   background: #fff;
   padding: 15px 35px;
   border-radius: 50px;
+}
+
+#section .business ul {
+  overflow: hidden;
+}
+#section .business ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  height: 600px;
+  padding: 100px 30px;
+}
+#section .business ul li:nth-child(2),
+#section .business ul li:nth-child(4) {
+  background: #edf0f4;
+}
+
+#section .business ul li img {
+  border-bottom: 2px solid rgb(224, 222, 222);
+  padding: 20px 40px;
+  margin-bottom: 50px;
 }
