@@ -20,6 +20,7 @@ a {
 }
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .cf::after {
@@ -57,9 +58,16 @@ body {
   margin-top: 10px;
 }
 
+#header #nav .depth1 > li:hover {
+  color: #45639d;
+}
+
 #section .slide {
   /* 자식이 부모를 기준으로 배치될때 부모한테 주는 속성 */
   position: relative;
+}
+#section .slide img {
+  width: 100%;
 }
 #section .slide .text {
   /* 자식박스를 부모박스 정중앙에 배치시키는 공식 */
@@ -122,4 +130,10 @@ body {
   color: #fff;
   padding: 13px 29px;
   border-radius: 6px;
+  border: 1px solid #45639d;
+  transition: all 0.2s;
+}
+#section .business ul li a:hover {
+  background: #fff;
+  color: #45639d;
 }
