@@ -53,12 +53,16 @@ ul {
 
 #section .slide {
   position: relative;
-  background-image: url(../image/mainslide1.jpg);
-  background-position: center center;
+  /* background-image: url(../image/mainslide1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: url(../image/mainslide1.jpg) no-repeat center / cover;
+  height: 100vh;
 }
 #section .slide .text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
