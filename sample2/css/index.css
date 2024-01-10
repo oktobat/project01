@@ -174,3 +174,104 @@ img {
   color: #fff;
   background: #000;
 }
+
+#section .product ul.best {
+  overflow: hidden;
+}
+#section .product ul.best li {
+  float: left;
+  width: 33.33%;
+  padding: 0 5px;
+}
+#section .product ul.best li h3 {
+  font-size: 13px;
+  color: #333;
+  padding: 26px 0 13px;
+}
+#section .product ul.best li p {
+  font-size: 12px;
+  color: #999;
+}
+
+#section .notice {
+  background: url(../image/mainbrand3-min.jpg) center / cover;
+  background-attachment: fixed;
+  height: 456px;
+  position: relative;
+}
+#section .notice .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+#section .notice .slideOuter2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#section .notice .slideOuter2 .slide2 {
+  color: #fff;
+  text-align: center;
+}
+#section .notice .slideOuter2 .slide2 .text h2 {
+  font-size: 50px;
+}
+#section .notice .slideOuter2 .slide2 .text h3 {
+  font-size: 24px;
+  margin: 32px 0;
+}
+#section .notice .slideOuter2 .slide2 .text p {
+  font-size: 14px;
+  margin: 0 0 35px;
+}
+#section .notice .slideOuter2 .slide2 .text a {
+  font-size: 12px;
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+#section .companyinfo {
+  padding: 50px 0;
+}
+#section .companyinfo ul {
+  overflow: hidden;
+}
+#section .companyinfo ul li {
+  float: left;
+  width: 25%;
+  color: #fff;
+  padding: 20px 15px;
+  text-align: center;
+}
+#section .companyinfo ul li:nth-child(1) {
+  background: #72c9c3;
+}
+#section .companyinfo ul li:nth-child(2) {
+  background: #364759;
+}
+#section .companyinfo ul li:nth-child(3) {
+  background: #e0e1e1;
+  color: #222;
+}
+#section .companyinfo ul li:nth-child(4) {
+  background: #307cae;
+}
+
+#section .companyinfo ul li > a {
+  height: 300px;
+  display: inline-block;
+}
+#section .companyinfo ul li > a h2 {
+  font-size: 30px;
+  margin: 30px 0;
+}
+#section .companyinfo ul li > a p {
+  font-size: 14px;
+  margin: 30px 0;
+}
