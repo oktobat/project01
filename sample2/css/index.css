@@ -30,7 +30,8 @@ img {
 
 #header {
   padding: 20px 0;
-  border: 1px solid #000;
+  border: 0px solid #000;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -47,7 +48,7 @@ img {
 #header #nav .depth1 > li {
   float: left;
   font-size: 14px;
-  color: #fff;
+  color: #000;
   font-family: "Noto Sans KR";
   font-weight: 900;
   margin-left: 30px;
@@ -192,6 +193,12 @@ img {
   font-size: 12px;
   color: #999;
 }
+#section .product ul.best li .photo img {
+  transition: all 0.5s;
+}
+#section .product ul.best li .photo img:hover {
+  opacity: 0.6;
+}
 
 #section .notice {
   background: url(../image/mainbrand3-min.jpg) center / cover;
@@ -299,4 +306,42 @@ img {
 #section .contact .position .addr {
   color: #666;
   margin: 2px 0 30px;
+}
+#section .contact .sns {
+  text-align: center;
+}
+#section .contact .sns a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  background: #32343e;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 5px;
+}
+
+#footer {
+  padding: 40px 0;
+  background: #ededed;
+  text-align: center;
+  font-size: 12px;
+}
+#footer h1 {
+  font-size: 14px;
+}
+#footer address {
+  font-style: normal;
+  margin: 20px 0 10px;
+}
+#footer address p {
+  line-height: 1.5em;
+}
+#footer address p span {
+  margin: 0 10px;
+}
+#footer address p:nth-child(2) span:nth-child(4) {
+  display: block;
 }
