@@ -89,6 +89,7 @@ img {
 
 #section .ourcompany {
   padding: 50px 0 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #section .ourcompany h2 {
   font-size: 26px;
@@ -142,5 +143,34 @@ img {
   transition: all 0.2s;
 }
 #section .ourcompany ul li img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+#section .product {
+  padding: 50px 0;
+  text-align: center;
+}
+#section .product .title h2 {
+  color: #414141;
+  font-size: 36px;
+}
+#section .product .title p {
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0 30px;
+}
+#section .product .title a {
+  /* inline요소인 a는 margin 상하값이 적용이 안되므로 block 속성을 추가하여 문제를 해결함 */
+  display: inline-block;
+  color: #222;
+  font-size: 12px;
+  margin: 0 0 40px;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+#section .product .title a:hover {
+  color: #fff;
+  background: #000;
 }
