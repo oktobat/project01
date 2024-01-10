@@ -137,3 +137,64 @@ body {
   background: #fff;
   color: #45639d;
 }
+
+#section .product {
+  background: url(../image/product_bg.jpg) center / cover;
+  padding: 100px 0;
+}
+#section .product .row {
+  overflow: hidden;
+}
+#section .product .text {
+  float: left;
+  width: 50%;
+  color: #fff;
+}
+#section .product .text h2 {
+  font-size: 70px;
+}
+#section .product .text p {
+  font-size: 24px;
+  margin: 30px 0;
+  line-height: 1.5em;
+}
+#section .product .text .btn a {
+  font-size: 14px;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#section .product .text .btn a:nth-child(1) {
+  background: #fff;
+  color: #333;
+}
+#section .product .photo {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#section .customer {
+  background: #edf0f4;
+  padding: 50px 0;
+}
+#section .customer .row h2 {
+  font-size: 70px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#section .customer .row div {
+  overflow: hidden;
+}
+#section .customer .row div span {
+  width: 33.33%;
+  float: left;
+  padding: 0 15px;
+}
+#section .customer .row div span img {
+  border: 1px solid #ddd;
+}
