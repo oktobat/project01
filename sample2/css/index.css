@@ -264,7 +264,7 @@ img {
 }
 
 #section .companyinfo ul li > a {
-  height: 300px;
+  height: 260px;
   display: inline-block;
 }
 #section .companyinfo ul li > a h2 {
@@ -274,4 +274,29 @@ img {
 #section .companyinfo ul li > a p {
   font-size: 14px;
   margin: 30px 0;
+  letter-spacing: -0.5px;
+  height: 54px;
+}
+#section .contact {
+  padding: 50px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#section .contact h2 {
+  font-size: 36px;
+  color: #414141;
+  margin: 0 0 50px;
+}
+#section .contact .position {
+  font-size: 14px;
+  color: #444;
+}
+#section .contact .position h3 {
+  font-size: 26px;
+  color: #414141;
+  margin: 50px 0 0;
+}
+#section .contact .position .addr {
+  color: #666;
+  margin: 2px 0 30px;
 }
