@@ -198,3 +198,21 @@ body {
 #section .customer .row div span img {
   border: 1px solid #ddd;
 }
+
+#footer .address {
+  background: #212934;
+  padding: 30px 0 34px;
+  color: #666;
+  font-size: 16px;
+}
+#footer .address pre {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5em;
+  margin: 16px 0;
+}
+#footer .copyright {
+  background: #1d242d;
+  padding: 20px 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 13px;
+}
