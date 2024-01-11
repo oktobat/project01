@@ -35,7 +35,6 @@ body {
 
 #header {
   background: rgba(0, 0, 0, 0.47);
-  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,6 +43,7 @@ body {
 }
 #header h1 {
   float: left;
+  padding: 20px 0;
 }
 #header #nav {
   float: right;
@@ -51,15 +51,44 @@ body {
 /* #header #nav .depth1 { background:pink } */
 #header #nav .depth1 > li {
   float: left;
-  padding-left: 48px;
+  margin-left: 48px;
   color: #fff;
   font-family: "Noto Sans KR";
   font-size: 18px;
-  margin-top: 10px;
+  position: relative;
+  border-top: 4px solid transparent;
 }
-
+#header #nav .depth1 > li > a {
+  display: block;
+  height: 86.3px;
+  line-height: 86.3px;
+}
 #header #nav .depth1 > li:hover {
   color: #45639d;
+  border-top: 4px solid #45639d;
+}
+
+#header #nav .depth1 > li:hover .depth2 {
+  display: block;
+}
+#header #nav .depth2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  color: #000;
+  border-top: 3px solid #45639d;
+  display: none;
+}
+#header #nav .depth2 > li > a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #212934;
+}
+#header #nav .depth2 > li > a:hover {
+  background: #f9f9fb;
 }
 
 #section .slide {
