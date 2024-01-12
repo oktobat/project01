@@ -28,7 +28,6 @@ a {
 .row {
   max-width: 1220px;
   margin: 0 auto;
-  height: inherit;
 }
 
 img {
@@ -40,65 +39,59 @@ img {
 
 #header {
   background-color: #fff;
-  z-index: 99;
-  position: relative;
 }
 
-#header > .row > h1 {
+#header .row h1 {
   float: left;
   padding: 10px 0;
 }
 
-#header > .row > h1 > a {
-  display: block;
-}
-
-#header > .row > #nav {
+#header .row #nav {
   float: right;
 }
 
-#header > .row > #nav > ul.depth1 > li {
+#header .row #nav ul.depth1 > li {
   float: left;
   position: relative;
   text-align: center;
   margin-left: 12px;
 }
 
-#header > .row > #nav > ul.depth1 > li > a {
+#header .row #nav ul.depth1 > li > a {
   font-size: 17px;
   font-weight: bold;
-  padding: 30px 22px;
-  display: inline-block;
+  padding: 0px 22px;
+  display: block;
   color: #333;
+  height: 85px;
+  line-height: 85px;
 }
 
-#header > .row > #nav > ul.depth1 > li:hover > ul.depth2 {
+#header .row #nav ul.depth1 > li:hover > ul.depth2 {
   display: block;
 }
 
-#header > .row > #nav > ul.depth1 > li > ul.depth2 {
+#header .row #nav ul.depth2 {
   display: none;
   position: absolute;
   top: 100%;
   width: 100%;
   text-align: left;
+  z-index: 999;
 }
 
-#header > .row > #nav > ul.depth1 > li > ul.depth2 > li > a {
+#header .row #nav ul.depth2 > li > a {
   display: block;
   padding: 12px 0 12px 22px;
-
   font-size: 14px;
   font-weight: 600;
   border-bottom: 1px solid rgba(132, 132, 132, 0.15);
-
   background-color: #fff;
   color: #333;
-
   transition: all 0.3s;
 }
 
-#header > .row > #nav > ul.depth1 > li > ul.depth2 > li > a:hover {
+#header .row #nav ul.depth2 > li > a:hover {
   background-color: #000;
   color: #fff;
 }
@@ -175,7 +168,7 @@ img {
 #section .about .imagebox > li > img {
   margin: 30px 0;
   opacity: 1;
-  transform: scale(1, 1);
+  transform: scale(1);
   transition: all 0.5s;
 }
 #section .about .imagebox > li > img:hover {
@@ -236,4 +229,102 @@ img {
 #section .creative .text a {
   display: block;
   margin-top: 50px;
+}
+
+/* ============================================================ */
+#section .business {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#section .business h2 {
+  font-size: 40px;
+}
+#section .business p.text {
+  font-size: 15px;
+  line-height: 2em;
+  margin: 20px 0 80px;
+}
+#section .business ul {
+  overflow: hidden;
+}
+#section .business ul li {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+#section .business ul li > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+#section .business ul li > a .overbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#section .business ul li:hover > a .overbox {
+  opacity: 1;
+}
+
+#section .business ul li img {
+  transition: all 0.5s;
+  transform-origin: center top;
+}
+#section .business ul li:hover img {
+  transform: scale(1.1);
+}
+
+/* ============================================================ */
+#section .best {
+  background: url(../image/banner04.jpg) center / cover;
+  height: 580px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* ============================================================ */
+#section .contact {
+  margin-top: -300px;
+}
+#section .contact .row {
+  overflow: hidden;
+}
+#section .contact .map {
+  float: left;
+  width: 50%;
+}
+#section .contact .query {
+  float: left;
+  width: 50%;
+  background: #fff;
+  height: 450px;
+}
+
+/* ============================================================ */
+#footer .row {
+  overflow: hidden;
+}
+#footer .btmlogo {
+  float: left;
+}
+#footer .btmmenu {
+  float: right;
+}
+#footer .btmmenu {
+  overflow: hidden;
+}
+#footer .btmmenu .companyinfo {
+  float: left;
+}
+#footer .btmmenu .sns {
+  float: right;
+  margin-left: 50px;
 }
