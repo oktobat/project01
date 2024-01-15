@@ -91,6 +91,51 @@ body {
   background: #f9f9fb;
 }
 
+/* 슬라이더 구역 */
+#section .slideOuter .slideInner {
+  position: relative;
+}
+#section .slideOuter .slideInner button.slick-arrow {
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+#section .slideOuter .slideInner button.slick-next {
+  right: 50px;
+}
+#section .slideOuter .slideInner button.slick-prev {
+  left: 50px;
+  z-index: 999;
+}
+#section .slideOuter .slideInner ul.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 50px;
+}
+#section .slideOuter .slideInner ul.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+#section .slideOuter .slideInner ul.slick-dots li button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-indent: 9999px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.2s;
+}
+#section .slideOuter .slideInner ul.slick-dots li.slick-active button {
+  background: #f00;
+  width: 50px;
+  border-radius: 50px;
+}
 #section .slide {
   /* 자식이 부모를 기준으로 배치될때 부모한테 주는 속성 */
   position: relative;
