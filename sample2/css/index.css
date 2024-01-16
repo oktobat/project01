@@ -142,6 +142,20 @@ img {
   background: #fff;
   border: 5px solid #000;
 }
+
+/* 슬라이더 자동재생멈춤 버튼 */
+#section .slideOuter {
+  position: relative;
+}
+#section .slideOuter .plapau {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  font-size: 20px;
+  color: #000;
+  margin-left: 50px;
+}
+
 #section .slide {
   position: relative;
   /* background-image: url(../image/mainslide1.jpg);

@@ -138,6 +138,19 @@ img {
 #section .slideOuter .slideInner ul.slick-dots li.slick-active button {
   background: rgba(255, 255, 255, 1);
 }
+
+#section .slideOuter {
+  position: relative;
+}
+#section .slideOuter .plapau {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 50px;
+}
+
 #section .homemain {
   width: 100%;
   background-color: gray;

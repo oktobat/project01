@@ -84,6 +84,9 @@
             </div>
           </div>
         </div>
+        <div class="plapau">
+          <i class="fa-solid fa-pause"></i>
+        </div>
       </div>
       <div class="ourcompany">
         <div class="row">
@@ -303,6 +306,15 @@
           '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button>',
         nextArrow:
           '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>',
+      });
+      $(".slideOuter .plapau i").on("click", function () {
+        if ($(this).hasClass("fa-pause")) {
+          $(".slideInner").slick("slickPause");
+          $(this).removeClass("fa-pause").addClass("fa-play");
+        } else {
+          $(".slideInner").slick("slickPlay");
+          $(this).removeClass("fa-play").addClass("fa-pause");
+        }
       });
     </script>
   </body>
