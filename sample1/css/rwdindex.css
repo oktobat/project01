@@ -7,15 +7,18 @@
 @media screen and (max-width: 899px) {
   #header {
     background: rgba(255, 255, 255, 1);
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99; /* 박스겹침이 발생했을때 겹치는 순서를 제어함. 높은값이 위로 올라옴 */
   }
+  #header .row {
+    padding: 0;
+  }
   #header h1 {
     float: left;
-    padding: 20px 0;
+    padding: 20px 0 20px 10px;
   }
   #header h1 a {
     width: 250px;
@@ -31,49 +34,57 @@
     font-size: 25px;
     height: 90px;
     line-height: 90px;
+    margin-right: 10px;
   }
   #header #nav {
     float: right;
+    width: 100%;
     display: none;
   }
   /* #header #nav .depth1 { background:pink } */
   #header #nav .depth1 > li {
-    float: left;
-    margin-left: 48px;
-    color: #fff;
+    float: none;
+    margin-left: 0px;
+    color: #4a4e57;
     font-family: "Noto Sans KR";
-    font-size: 18px;
+    font-size: 12px;
     position: relative;
-    border-top: 4px solid transparent;
+    border-top: 0px solid #4a4e57;
   }
   #header #nav .depth1 > li > a {
     display: block;
-    height: 86.3px;
-    line-height: 86.3px;
+    height: auto;
+    line-height: 42px;
+    border-top: 1px solid #d4d4d4;
+    padding-left: 40px;
   }
   #header #nav .depth1 > li:hover {
-    color: #45639d;
-    border-top: 4px solid #45639d;
+    color: #4a4e57;
+    border-top: 0px solid #4a4e57;
+  }
+  #header #nav .depth1 > li > a:hover {
+    background: #f9f9fb;
   }
 
   #header #nav .depth1 > li:hover .depth2 {
     display: block;
   }
   #header #nav .depth2 {
-    position: absolute;
+    position: static;
     top: 100%;
     left: 0;
-    width: 200px;
+    width: 100%;
     background: #fff;
     color: #000;
-    border-top: 3px solid #45639d;
-    display: none;
+    border-top: 0px solid #45639d;
+    display: block;
   }
   #header #nav .depth2 > li > a {
     display: block;
-    padding: 12px 20px;
-    font-size: 14px;
+    padding: 12px 20px 12px 50px;
+    font-size: 12px;
     color: #212934;
+    border-top: 1px solid #d4d4d4;
   }
   #header #nav .depth2 > li > a:hover {
     background: #f9f9fb;
