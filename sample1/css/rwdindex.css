@@ -1,0 +1,81 @@
+@media screen and (max-width: 1289px) {
+  .row {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #header {
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99; /* 박스겹침이 발생했을때 겹치는 순서를 제어함. 높은값이 위로 올라옴 */
+  }
+  #header h1 {
+    float: left;
+    padding: 20px 0;
+  }
+  #header h1 a {
+    width: 250px;
+    height: 50px;
+    display: block;
+    background: url(../image/logo_st.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #header .menuopen {
+    display: block;
+    float: right;
+    font-size: 25px;
+    height: 90px;
+    line-height: 90px;
+  }
+  #header #nav {
+    float: right;
+    display: none;
+  }
+  /* #header #nav .depth1 { background:pink } */
+  #header #nav .depth1 > li {
+    float: left;
+    margin-left: 48px;
+    color: #fff;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    position: relative;
+    border-top: 4px solid transparent;
+  }
+  #header #nav .depth1 > li > a {
+    display: block;
+    height: 86.3px;
+    line-height: 86.3px;
+  }
+  #header #nav .depth1 > li:hover {
+    color: #45639d;
+    border-top: 4px solid #45639d;
+  }
+
+  #header #nav .depth1 > li:hover .depth2 {
+    display: block;
+  }
+  #header #nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #45639d;
+    display: none;
+  }
+  #header #nav .depth2 > li > a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #212934;
+  }
+  #header #nav .depth2 > li > a:hover {
+    background: #f9f9fb;
+  }
+}

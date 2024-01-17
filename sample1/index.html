@@ -30,13 +30,12 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/rwdindex.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
       integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
@@ -44,10 +43,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
   </head>
   <body>
@@ -55,12 +52,13 @@
       <div class="row cf">
         <h1>
           <a href="#">
-            <img
-              src="./image/워드프레스 기업홈페이지1 로고.png"
-              alt="company"
-            />
+            <span class="blind">company</span>
           </a>
         </h1>
+        <div class="menuopen">
+          <span class="blind">메뉴열기</span>
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <div id="nav">
           <ul class="depth1">
             <li>
@@ -203,7 +201,7 @@
 
     <script>
       $(".slideInner").slick({
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         speed: 300,
         autoplay: true,
         dots: true,
