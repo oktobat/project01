@@ -1,0 +1,77 @@
+@media screen and (max-width: 1220px) {
+  .row {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #header {
+    background-color: #fff;
+  }
+
+  #header .row h1 {
+    float: left;
+    padding: 10px 0;
+  }
+
+  #header .row .menuopen {
+    float: right;
+    display: block;
+    height: 85px;
+    line-height: 85px;
+    font-size: 25px;
+  }
+
+  #header .row #nav {
+    float: right;
+    display: none;
+  }
+
+  #header .row #nav ul.depth1 > li {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-left: 12px;
+  }
+
+  #header .row #nav ul.depth1 > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 22px;
+    display: block;
+    color: #333;
+    height: 85px;
+    line-height: 85px;
+  }
+
+  #header .row #nav ul.depth1 > li:hover > ul.depth2 {
+    display: block;
+  }
+
+  #header .row #nav ul.depth2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    z-index: 999;
+  }
+
+  #header .row #nav ul.depth2 > li > a {
+    display: block;
+    padding: 12px 0 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s;
+  }
+
+  #header .row #nav ul.depth2 > li > a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}

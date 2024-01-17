@@ -9,7 +9,11 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
 }
-
+.blind {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
 ul {
   list-style: none;
 }
@@ -44,6 +48,10 @@ img {
 #header .row h1 {
   float: left;
   padding: 10px 0;
+}
+
+#header .row .menuopen {
+  display: none;
 }
 
 #header .row #nav {
