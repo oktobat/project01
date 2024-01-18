@@ -9,12 +9,14 @@
 @media screen and (max-width: 990px) {
   #header {
     background-color: #fff;
-    padding: 0 50px;
+  }
+  #header .row {
+    padding: 0;
   }
 
   #header .row h1 {
     float: left;
-    padding: 10px 0;
+    padding: 10px 0 10px 50px;
   }
 
   #header .row .menuopen {
@@ -23,28 +25,45 @@
     height: 85px;
     line-height: 85px;
     font-size: 25px;
+    margin-right: 50px;
   }
 
   #header .row #nav {
     float: right;
-    display: none;
+    width: 100%;
+    display: block;
   }
 
   #header .row #nav ul.depth1 > li {
-    float: left;
+    float: none;
     position: relative;
-    text-align: center;
-    margin-left: 12px;
+    text-align: left;
+    margin-left: 0px;
   }
 
   #header .row #nav ul.depth1 > li > a {
     font-size: 17px;
     font-weight: bold;
-    padding: 0px 22px;
+    padding: 0px 50px;
     display: block;
     color: #333;
-    height: 85px;
-    line-height: 85px;
+    height: auto;
+    line-height: 50px;
+    border-top: 1px solid rgba(132, 132, 132, 0.15);
+  }
+  #header .row #nav ul.depth1 > li:hover > a {
+    background: #000;
+    color: #fff;
+  }
+  #header .row #nav ul.depth1 > li > a::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 50px;
+    font-size: 10px;
+    font-family: "FontAwesome";
+    content: "\f107";
+    opacity: 0.3;
   }
 
   #header .row #nav ul.depth1 > li:hover > ul.depth2 {
@@ -53,7 +72,7 @@
 
   #header .row #nav ul.depth2 {
     display: none;
-    position: absolute;
+    position: static;
     top: 100%;
     width: 100%;
     text-align: left;
@@ -62,10 +81,11 @@
 
   #header .row #nav ul.depth2 > li > a {
     display: block;
-    padding: 12px 0 12px 22px;
+    padding: 12px 0 12px 50px;
     font-size: 14px;
     font-weight: 600;
-    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+    border-bottom: 0px solid rgba(132, 132, 132, 0.15);
+    border-top: 1px solid rgba(132, 132, 132, 0.15);
     background-color: #fff;
     color: #333;
     transition: all 0.3s;

@@ -10,7 +10,7 @@
   #header {
     border: 0px solid #000;
     background: #fff;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,25 +30,29 @@
   }
   #header #nav {
     float: right;
-    display: none;
+    width: 100%;
+    display: block;
   }
   #header #nav .depth1 > li {
-    float: left;
-    font-size: 14px;
+    float: none;
+    font-size: 13px;
     color: #000;
     font-family: "Noto Sans KR";
     font-weight: 900;
-    margin-left: 30px;
+    margin-left: 0px;
     position: relative;
+    border: 0px solid #f00;
   }
   #header #nav .depth1 > li > a {
-    height: 88.3px;
-    line-height: 88.3px;
+    height: auto;
+    line-height: 40px;
     display: block;
     padding: 0 25px 0 15px;
     position: relative;
+    border-top: 1px solid #d4d4d4;
   }
-  #header #nav .depth1 > li > a::after {
+  #header #nav .depth1 > li:nth-child(1) > a::after,
+  #header #nav .depth1 > li:nth-child(4) > a::after {
     display: block;
     position: absolute;
     top: 2px;
@@ -65,16 +69,16 @@
     display: block;
   }
   #header #nav .depth2 {
-    position: absolute;
+    position: static;
     top: 100%;
     left: 0;
-    width: 200px;
+    width: 100%;
     background: #333;
     color: #fff;
     font-size: 13px;
     font-family: "Noto Sans KR";
     font-weight: 300;
-    display: none;
+    display: block;
   }
   #header #nav .depth2 > li > a {
     display: block;

@@ -69,7 +69,8 @@ img {
   padding: 0 25px 0 15px;
   position: relative;
 }
-#header #nav .depth1 > li > a::after {
+#header #nav .depth1 > li:nth-child(1) > a::after,
+#header #nav .depth1 > li:nth-child(4) > a::after {
   display: block;
   position: absolute;
   top: 2px;
