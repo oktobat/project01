@@ -355,7 +355,7 @@ img {
 
 /* ============================================================ */
 #section .best {
-  background: url(../image/banner04.jpg) center / cover;
+  background: url(../image/banner04.jpg) right center / cover;
   height: 580px;
   text-align: center;
   padding-top: 100px;
@@ -363,7 +363,7 @@ img {
 
 /* ============================================================ */
 #section .contact {
-  margin-top: -300px;
+  margin-top: -200px;
 }
 #section .contact .row {
   overflow: hidden;
@@ -380,6 +380,11 @@ img {
 }
 
 /* ============================================================ */
+#footer {
+  margin-top: 50px;
+  padding: 50px 0;
+  border-top: 1px solid #d4d4d4;
+}
 #footer .row {
   overflow: hidden;
 }

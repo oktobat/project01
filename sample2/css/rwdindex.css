@@ -90,4 +90,46 @@
     padding: 7px 15px;
     background: rgba(0, 0, 0, 0.15);
   }
+  /* 슬라이더 텍스트 */
+  #section .slideOuter .slide .text {
+    top: 50%;
+  }
+  #section .slideOuter .slide .text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* 세계 최고의 글로벌 기업*/
+  #section .ourcompany ul li {
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+  #section .ourcompany ul li img {
+    width: 100%;
+  }
+
+  /* Product 구역 */
+  #section .product ul.best li {
+    float: left;
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 40px;
+  }
+
+  /* companyinfo 구역*/
+  #section .companyinfo ul li {
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  /* footer 구역 */
+  #footer span {
+    display: block;
+  }
 }

@@ -165,28 +165,28 @@ img {
   margin-left: 50px;
 }
 
-#section .slide {
+#section .slideOuter .slide {
   position: relative;
   /* background-image: url(../image/mainslide1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
   /* 배경이미지는 높이가 있어야 보임. 100vh는 화면이랑 같은 높이를 뜻함 */
-  height: 100vh;
+  height: 60vw;
 }
-#section .slide1 {
+#section .slideOuter .slide1 {
   background: url(../image/mainslide1.jpg) no-repeat center / cover;
 }
-#section .slide2 {
+#section .slideOuter .slide2 {
   background: url(../image/mainslide2.jpg) no-repeat center / cover;
 }
-#section .slide3 {
+#section .slideOuter .slide3 {
   background: url(../image/mainslide3.jpg) no-repeat center / cover;
 }
-#section .slide4 {
+#section .slideOuter .slide4 {
   background: url(../image/mainslide4.jpg) no-repeat center / cover;
 }
-#section .slide .text {
+#section .slideOuter .slide .text {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -195,14 +195,15 @@ img {
   text-align: center;
   color: #fff;
 }
-#section .slide .text p {
+#section .slideOuter .slide .text p {
   font-size: 20px;
+  word-break: keep-all;
 }
-#section .slide .text h2 {
-  font-size: 50px;
+#section .slideOuter .slide .text h2 {
+  font-size: 5vw;
   margin: 30px 0 50px;
 }
-#section .slide .text a {
+#section .slideOuter .slide .text a {
   padding: 10px 16px;
   font-size: 18px;
   border: 2px solid #fff;
@@ -362,7 +363,29 @@ img {
   padding: 10px 30px;
   border: 1px solid #fff;
   border-radius: 2px;
+  display: inline-block;
 }
+#section .notice .slideOuter2 .slick-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+#section .notice .slideOuter2 .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+#section .notice .slideOuter2 .slick-dots li button {
+  width: 20px;
+  height: 5px;
+  background: #869791;
+  border: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#section .notice .slideOuter2 .slick-dots li.slick-active button {
+  background: #179bd7;
+}
+
+/* 슬라이드2 도트버튼 스타일 */
 
 #section .companyinfo {
   padding: 50px 0;

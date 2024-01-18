@@ -184,7 +184,18 @@
           <div class="slideInner2">
             <div class="slide2">
               <div class="text">
-                <h2>NOTICE</h2>
+                <h2>NOTICE1</h2>
+                <h3>창업 절차 및 조건에 대해 안내해드립니다.</h3>
+                <p>
+                  자세한 문의는 이메일로 접수해주시기 바랍니다.<br />
+                  tsalt@hanmail.net
+                </p>
+                <a href="#">공지사항 바로가기</a>
+              </div>
+            </div>
+            <div class="slide2">
+              <div class="text">
+                <h2>NOTICE2</h2>
                 <h3>창업 절차 및 조건에 대해 안내해드립니다.</h3>
                 <p>
                   자세한 문의는 이메일로 접수해주시기 바랍니다.<br />
@@ -320,6 +331,13 @@
           $(".slideInner").slick("slickPlay");
           $(this).removeClass("fa-play").addClass("fa-pause");
         }
+      });
+
+      $(".slideInner2").slick({
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        fade: true,
       });
     </script>
   </body>
